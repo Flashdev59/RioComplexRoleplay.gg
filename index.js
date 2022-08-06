@@ -1,4 +1,3 @@
-
   var audio;
  var firstPlayed = false;
  var lastVolume = 0;
