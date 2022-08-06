@@ -1,0 +1,74 @@
+@keyframes bounce {
+      0%,20%,60%,100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40%{
+         -webkit-transform: translateY(-20px);
+         transform: translateY(-20px);
+      }
+
+      80%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+.banner{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.banner video {
+    width: 100vw;
+    height: 110vh;
+    max-width: 1920px ;
+    max-height: 1080px;
+    min-width: 20vw;
+    min-height: 50vh;
+    object-fit: fill;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.banner .content{
+    padding-top: 90vh;
+    z-index: 1;
+    display:flex;
+}
+.banner .content h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 5px rgb(2, 0, 145);
+    z-index: 1;
+    margin:  0 ;
+    padding: 1vh;
+}
+.banner .content ul{
+    list-style: none;
+    text-decoration: none;
+    padding: 1vh;
+    margin: 0 ; 
+    transition: all .5s;
+}
+.banner .content ul li{
+    display: inline-block;
+    padding: 0vh 1vh;
+    cursor: pointer;
+}
+.banner .content  ul li :hover{
+    animation:bounce 1s;
+}
