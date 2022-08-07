@@ -43,7 +43,7 @@ body{
     left: 0;
 }
 .banner .content{
-    padding-top: 90vh; 
+    padding-top: 90vh;
     z-index: 1;
     display:flex;
 }
